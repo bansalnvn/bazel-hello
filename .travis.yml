@@ -26,6 +26,7 @@ before_install:
     - git submodule update --init 
 
 script:
+    - bazel build ...
     - bazel test ... --test_output=all
 
 

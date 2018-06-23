@@ -14,3 +14,13 @@ cc_binary(
     copts = ["-std=c++1z",],
 )
 
+cc_test(
+    name = "hello-test",
+    deps = [ 
+    	":hello-add",
+    	"@immer//:immer",
+    	"@boost//:test"]
+    	,
+    srcs = ["test/main.cc"],
+    copts = ["-std=c++1z",],
+)

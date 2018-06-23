@@ -29,4 +29,7 @@ script:
     - bazel build ...
     - bazel test ... --test_output=all
 
+after_failure:
+    - cat bazel-out/k8-fastbuild/testlogs/hello-test/test.log
+
 

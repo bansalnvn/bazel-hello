@@ -13,6 +13,10 @@ matrix:
 git:
   submodules: false
 before_install:
+    - mkdir -p latest-gcc-symlinks
+    - ln -s /usr/bin/g++-7 latest-gcc-symlinks/g++
+    - ln -s /usr/bin/gcc-7 latest-gcc-symlinks/gcc
+    - export PATH=$PWD/latest-gcc-symlinks:$PATH
     - eval "${MATRIX_EVAL}"
     - g++ --version
     - echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list

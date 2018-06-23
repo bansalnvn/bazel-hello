@@ -23,4 +23,5 @@ cc_test(
     	,
     srcs = ["test/main.cc"],
     copts = ["-std=c++1z",],
+    timeout = "short",
 )

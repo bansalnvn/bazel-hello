@@ -11,7 +11,7 @@ cc_binary(
     	"@immer//:immer"]
     	,
     srcs = ["src/hello-world.cc"],
-    copts = ["-std=c++1z",],
+    copts = ["-std=c++1y",],
 )
 
 cc_test(
@@ -22,5 +22,5 @@ cc_test(
     	"@boost//:test"]
     	,
     srcs = ["test/main.cc"],
-    copts = ["-std=c++1z",],
+    copts = ["-std=c++1y",],
 )

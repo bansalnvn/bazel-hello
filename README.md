@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/bansalnvn/bazel-hello.svg?branch=master)](https://travis-ci.org/bansalnvn/bazel-hello)
+
+
 # Stage 1
 
 This showcases how to build a single file to create a runnable application.

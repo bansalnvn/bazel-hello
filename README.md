@@ -1,7 +1,9 @@
+# bazel-hello
+
 [![Build Status](https://travis-ci.org/bansalnvn/bazel-hello.svg?branch=master)](https://travis-ci.org/bansalnvn/bazel-hello)
 
 
-# Stage 1
+## Noraml Build
 
 This showcases how to build a single file to create a runnable application.
 
@@ -33,14 +35,14 @@ Target //:hello-world up-to-date:
 In the run log above you can see where the executable was built so you can locate it and use it.
 
 
-# Stage 2 
+## Adding the submodules and then build
 
 Adding a submodule and using that.
 Here I am using immer project to be used inside my hello-world project.
 
 add gitsubmodule
 
-## create a directory where submodules would be located. external in this project's case.
+### create a directory where submodules would be located. external in this project's case.
 
 ```
 adding the submodule.
